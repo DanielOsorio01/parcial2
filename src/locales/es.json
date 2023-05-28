@@ -1,0 +1,20 @@
+{
+    "ClickToView": "Haz clic en una fila para ver los detalles",
+    "ContactUs": "Contáctenos",
+    "GrownMeasure": "msnm",
+    "GrownMsg": "Crecido a una altura de ",
+    "Id": "ID",
+    "LoginButton": "Ingresar",
+    "LoginCancel": "Cancelar",
+    "LoginCredentialsError": "Error de autenticación. Por favor, verifica tus credenciales.",
+    "LoginPassword": "Contraseña",
+    "LoginPasswordError": "Se requiere contraseña",
+    "LoginTitle": "Inicio de sesión",
+    "LoginUsername": "Nombre de usuario",
+    "LoginUsernameError": "Se requiere nombre de usuario",
+    "Name": "Nombre",
+    "Notes": "Notas",
+    "Region": "Región",
+    "ServerConnectionError": "No se puede conectar al servidor. Por favor, inténtalo de nuevo más tarde.",
+    "Type": "Tipo"
+}

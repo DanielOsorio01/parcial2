@@ -1,0 +1,73 @@
+.CafeDetail-box {
+    left: 963px;
+    top: 467px;
+    box-sizing: border-box;
+    background: rgba(224, 187, 187, 0.2);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    justify-content: center;
+}
+
+.CafeDetail-title{
+    left: 1009px;
+    top: 471px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.CafeDetail-image{
+    
+    width: 116px;
+    height: 150px;
+    left: 1061px;
+    top: 530px;
+}
+
+.CafeDetail-date {
+    left: 989px;
+    top: 493px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.CafeDetail-text{
+    left: 984px;
+    top: 694px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.CafeDetail-height{
+    left: 991px;
+    top: 765px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #000000;
+}

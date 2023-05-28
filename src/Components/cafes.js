@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { Row, Col, Table, Image } from "react-bootstrap";
+import "../styles/Cafes.css";
+import { FormattedMessage, FormattedDate } from "react-intl";
 
 function Cafes() {
     const [cafes, setCafes] = useState([]);
@@ -32,16 +35,23 @@ function Cafes() {
     }
     
     return (
-        <div classname="container">
-            <div className="row">
-                <div className="col-md-8">
-                <table class="table table-striped">
-                  <thead>
+        <Row className="justify-content-md-around">
+            <Col md={8}>
+                <Table >
+                  <thead className="table-dark">
                         <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Region</th>
+                        <th scope="col">
+                            <FormattedMessage id="Id" />
+                        </th>
+                        <th scope="col">
+                            <FormattedMessage id="Name" />
+                        </th>
+                        <th scope="col">
+                            <FormattedMessage id="Type" />
+                        </th>
+                        <th scope="col">
+                            <FormattedMessage id="Region" />
+                        </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,27 +64,33 @@ function Cafes() {
                         </tr>
                     ))}
                     </tbody>
-                </table>
-                <div className="col-md-4">
+                </Table>
+            </Col>
+            <Col md={3}>
                     {selectedCafe ? (
-                        <div>
-                            <h1>Cafe Details - ID: {selectedCafe.id}</h1>
-                            <p>Nombre: {selectedCafe.nombre}</p>
-                            <p>Tipo: {selectedCafe.tipo}</p>
-                            <p>Región: {selectedCafe.region}</p>
-                            <p>Notas: {selectedCafe.notas}</p>
-                            <p>Fecha de Cultivo: {selectedCafe.fecha_cultivo}</p>
-                            <p>Altura: {selectedCafe.altura}</p>
-                            <img src={selectedCafe.imagen} alt="Cafe" />
+                        <div className="CafeDetail-box">
+                            <h1 className="CafeDetail-title">{selectedCafe.nombre.toUpperCase()}</h1>
+                            <p>
+                                <FormattedDate value={selectedCafe.fecha_cultivo} year='numeric' month='numeric' day='numeric'/>
+                            </p>
+                            <Image className="CafeDetail-image" src={selectedCafe.imagen} alt="Cafe" />
+                            <p className="CafeDetail-text">
+                                <FormattedMessage id="Notes" />
+                            </p>
+                            <p className="CafeDetail-text">{selectedCafe.notas}</p>
+                            <p className="CafeDetail-height">
+                                <FormattedMessage id="GrownMsg" /> {selectedCafe.altura} <FormattedMessage id="GrownMeasure" />
+                            </p>
+                            
                         </div>
                         ) : (
-                            <p>Click on a coffee to see details</p>
+                            <p>
+                                <FormattedMessage id="ClickToView" />
+                            </p>
                         )}
                         
-                </div>
-            </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
 
 
     );

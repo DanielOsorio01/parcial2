@@ -1,0 +1,20 @@
+{
+    "ClickToView": "Click on a row to view details",
+    "ContactUs": "Contact us",
+    "GrownMeasure": "masl",
+    "GrownMsg": "Grown at a height of ",
+    "Id": "ID",
+    "LoginButton": "Login",
+    "LoginCancel": "Cancel",
+    "LoginCredentialsError": "Authentication failed. Please check your credentials.",
+    "LoginPassword": "Password",
+    "LoginPasswordError": "Password is required",
+    "LoginTitle": "Login",
+    "LoginUsername": "Username",
+    "LoginUsernameError": "Username is required",
+    "Name": "Name",
+    "Notes": "Notes",
+    "Region": "Region",
+    "ServerConnectionError": "Unable to connect to server. Please try again later.",
+    "Type": "Type"
+}
